@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Angular-hamburger-helper by infomofo</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Angular-hamburger-helper</h1>
+        <p>an angular directive to show a &quot;hamburger&quot; menu icon that can transform into a back arrow</p>
+
+        <p class="view"><a href="https://github.com/infomofo/angular-hamburger-helper">View the Project on GitHub <small>infomofo/angular-hamburger-helper</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/infomofo/angular-hamburger-helper/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/infomofo/angular-hamburger-helper/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/infomofo/angular-hamburger-helper">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="angular-hamburger-helper" class="anchor" href="#angular-hamburger-helper"><span class="octicon octicon-link"></span></a>angular-hamburger-helper</h1>
+
+<h2>
+<a name="what-is-angular-hamburger-helper" class="anchor" href="#what-is-angular-hamburger-helper"><span class="octicon octicon-link"></span></a>what is angular-hamburger-helper?</h2>
+
+<p>angular-hamburger-helper is a directive written in angular that provides a "<a href="http://blogs.wsj.com/digits/2013/03/18/whats-a-hamburger-button-a-guide-to-app/">hamburger</a>" icon commonly used to </p>
+
+<h2>
+<a name="um-why" class="anchor" href="#um-why"><span class="octicon octicon-link"></span></a>um why?</h2>
+
+<p>this transition was inspired by the <a href="http://www.google.com/design/spec/animation/delightful-details.html#delightful-details-delightful-details">delightful details</a> 
+section of google's material-design specification.</p>
+
+<h2>
+<a name="oh-ok" class="anchor" href="#oh-ok"><span class="octicon octicon-link"></span></a>oh ok</h2>
+
+<h2>
+<a name="how-do-i-use-it" class="anchor" href="#how-do-i-use-it"><span class="octicon octicon-link"></span></a>how do i use it?</h2>
+
+<ol>
+<li>
+<p>install the module using bower at the command line:</p>
+
+<pre><code>bower install infomofo/angular-hamburger-helper
+</code></pre>
+</li>
+<li>
+<p>include the css file in your html file:</p>
+
+<pre><code>&lt;link rel="stylesheet" href="bower_components/angular-hamburger-helper/ng-hamburger-helper.css"/&gt;
+</code></pre>
+</li>
+<li>
+<p>include the javascript file in your html file:</p>
+
+<pre><code>&lt;script type='text/javascript' src='bower_components/angular-hamburger-helper/ng-hamburger-helper.js'&gt;&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>include the hamburger helper service in your angular module config:</p>
+
+<pre><code>var app = angular.module('YourApp',['hamburger-helper']);
+</code></pre>
+</li>
+<li>
+<p>use the directive in your html file.  the directive appears as a 44x44 hamburger icon, when "variable" evaluates to true it will 
+rotate and transform into a backwards arrow.</p>
+
+<pre><code>&lt;ng-hamburger-helper&gt;&lt;/ng-hamburger-helper&gt;
+</code></pre>
+</li>
+<li><p>use the hamburgerHelper service to toggle the state of the button:</p></li>
+</ol><h2>
+<a name="but-i-want-it-to-be-pink-or-bigger-or-something" class="anchor" href="#but-i-want-it-to-be-pink-or-bigger-or-something"><span class="octicon octicon-link"></span></a>but i want it to be pink or bigger or something</h2>
+
+<p>you can style the icon with some css:</p>
+
+<pre><code>.hamburger-helper {     
+  /* modifying the height or width will also require modifying the font-size to ensure that the arrow head still lines up */
+  height: 44px;
+  font-size: 22px;
+    width: 44px;
+  /* this affects the speed of the rotation */
+    transition: transform 0.3s; 
+}
+
+.hamburger-helper span {
+  /* the height of the hamburger bars and width of the arrow */
+    height: 0.3em; 
+}
+
+.hamburger-helper span,
+.hamburger-helper span:after,
+.hamburger-helper span:before {
+  /* the color of the hamburger and arrow */
+    background-color: #fff;
+}
+
+.hamburger-helper span:after,
+.hamber-helper span:before {
+  /* this affects the speed that the hamburger buns are transformed into the arrow */
+  transition: transform 0.3s;
+}
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/infomofo">infomofo</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
