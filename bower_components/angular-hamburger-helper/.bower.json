@@ -1,11 +1,11 @@
 {
   "name": "angular-hamburger-helper",
   "homepage": "https://github.com/infomofo/angular-hamburger-helper",
-  "_release": "d15f4c7c22",
+  "_release": "11b7eca790",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "d15f4c7c227bfe20a104e61f836fcb573cd740e7"
+    "commit": "11b7eca790ebf8b12e6f4f4ae1a5bd1d46867af3"
   },
   "_source": "git://github.com/infomofo/angular-hamburger-helper.git",
   "_target": "*",
