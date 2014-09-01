@@ -5,19 +5,6 @@ angular.module("hamburgerHelper",[])
     hamburgerHelper: 'hamburger-helper',
     transformed: 'hamburger-transformed'
   })
-  .factory('hamburgerHelper', ['$timeout', function($timeout){
-
-    var state = {
-      isArrow: false
-    }
-
-    return {
-      state: state,
-      isArrow: function(){
-        return state.isArrow;
-      }
-    }
-  }])
   .directive("ngHamburgerHelper", ['hamburgerHelperCssClasses',function(hamburgerHelperCssClasses){
       return {
           restrict: "E",
@@ -27,8 +14,7 @@ angular.module("hamburgerHelper",[])
           transclude: true,
           template: '<span class="' + hamburgerHelperCssClasses.hamburgerHelper + '" ng-class="{\'' + hamburgerHelperCssClasses.transformed + '\': arrowWhen}"><span></span></span>',
           replace: true,
-          controller: ['$scope', 'hamburgerHelper', '$element',function($scope, hamburgerHelper, $element){
-            $scope.hamburgerHelper = hamburgerHelper;
+          controller: ['$scope', '$element',function($scope, $element){
           }]
       }
   }]);
