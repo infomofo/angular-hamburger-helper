@@ -7,12 +7,13 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="bower_components/angular-hamburger-helper/ng-hamburger-helper.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app='myapp' ng-ctrl='myctrl'>
     <div class="wrapper">
       <header>
         <h1>Angular-hamburger-helper</h1>
@@ -34,7 +35,24 @@
 <h2>
 <a name="what-is-angular-hamburger-helper" class="anchor" href="#what-is-angular-hamburger-helper"><span class="octicon octicon-link"></span></a>what is angular-hamburger-helper?</h2>
 
-<p>angular-hamburger-helper is a directive written in angular that provides a "<a href="http://blogs.wsj.com/digits/2013/03/18/whats-a-hamburger-button-a-guide-to-app/">hamburger</a>" icon commonly used to </p>
+<p>angular-hamburger-helper is a directive written in angular that provides a "<a href="http://blogs.wsj.com/digits/2013/03/18/whats-a-hamburger-button-a-guide-to-app/">hamburger</a>" icon commonly used to denote a menu icon.  In some application states if the menu is not available you will want this to be replaced with a back arrow.</p>
+
+<h3>live demo</h3>
+click the icon to see the transformation
+<div>
+<a ng-click="arrow = !arrow" ng-init='arrow = false'>
+  <ng-hamburger-helper arrow-when="arrow"></ng-hamburger-helper>
+</a>
+</div>
+
+<div>
+This is all achieved with the snippet of code:
+<pre>
+&lt;a ng-click=&quot;arrow = !arrow&quot; ng-init='arrow = false'&gt;
+  &lt;ng-hamburger-helper arrow-when=&quot;arrow&quot;&gt;&lt;/ng-hamburger-helper&gt;
+&lt;/a&gt;
+</pre>
+</div>
 
 <h2>
 <a name="um-why" class="anchor" href="#um-why"><span class="octicon octicon-link"></span></a>um why?</h2>
@@ -120,6 +138,8 @@ rotate and transform into a backwards arrow.</p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script type='text/javascript' src='bower_components/angular/angular.min.js'></script>
+    <script type='text/javascript' src='bower_components/angular-hamburger-helper/ng-hamburger-helper.js'></script>
+    <script type='text/javascript' src='javascripts/demo.js'></script>
   </body>
 </html>
