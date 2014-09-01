@@ -4,7 +4,12 @@ angular-hamburger-helper
 what is angular-hamburger-helper?
 ---------------------------------
 
-angular-hamburger-helper is a directive written in angular that provides a "[hamburger](http://blogs.wsj.com/digits/2013/03/18/whats-a-hamburger-button-a-guide-to-app/)" icon commonly used to 
+angular-hamburger-helper is a directive written in angular that provides a 
+"[hamburger](http://blogs.wsj.com/digits/2013/03/18/whats-a-hamburger-button-a-guide-to-app/)" icon commonly used to 
+denote a menu icon.  In some application states if the menu is not available you will want this to be replaced with a 
+back arrow. 
+
+you can see a live demo [here](https://infomofo.github.io/angular-hamburger-helper/).
 
 um why?
 -------
