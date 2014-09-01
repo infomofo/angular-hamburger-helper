@@ -11,6 +11,10 @@ back arrow.
 
 you can see a live demo [here](https://infomofo.github.io/angular-hamburger-helper/).
 
+it should look like 
+
+![a spinning hamburger that turns into an arrow](/../gh-pages/images/hamburger_menu.gif?raw=true)
+
 um why?
 -------
 
