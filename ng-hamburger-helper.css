@@ -1,9 +1,9 @@
 .hamburger-helper {
-  height: 44px;
-  font-size: 22px;
+  height: 36px;
+  font-size: 19px;
   position: relative;
 	display: inline-block;
-	width: 44px;
+	width: 36px;
 	cursor: pointer;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
@@ -57,10 +57,10 @@
 
 .hamburger-helper.hamburger-transformed span:before {
 	-webkit-transform: translateY(-0.36em) translateX(0.65em) rotate(45deg) scaleX(0.6);
-	transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+	transform: translateY(-0.3em) translateX(0.65em) rotate(45deg) scaleX(0.6);
 }
 
 .hamburger-helper.hamburger-transformed span:after {
 	-webkit-transform: translateY(0.36em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
-	transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+	transform: translateY(0.3em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
 }
