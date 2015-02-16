@@ -42,7 +42,7 @@ how do i use it?
 
 4. include the hamburger helper service in your angular module config:
 
-        var app = angular.module('YourApp',['hamburger-helper']);
+        var app = angular.module('YourApp',['hamburgerHelper']);
 
 5. use the directive in your html file.  the directive appears as a 44x44 hamburger icon, when "variable" evaluates to true it will 
     rotate and transform into a backwards arrow.
